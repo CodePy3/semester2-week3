@@ -8,9 +8,9 @@
 
 int main( void ) {
 
-    char testChar;
-    int testInt;
-    float testFloat;
+    char testChar = 'h';
+    long int testInt = 9000;
+    float testFloat = 11.33;
 
     printf("Char size is %ld bytes\n",sizeof(testChar));
     printf("Int size is %ld bytes\n",sizeof(testInt));

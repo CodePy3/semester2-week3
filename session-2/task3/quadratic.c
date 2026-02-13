@@ -15,14 +15,17 @@ int main( void ) {
     float b = -5.0;
     float c = 6.0;
     float root1, root2;
+    float Bsq = b*b;
 
     /*
      * Implement the formula for the 2 roots of a quadratic.
      * You can define additional variable for intermediate results to make the code simpler.
      * Print out the final results for the 2 roots as float values.
      */
-
-    
+    float x1 = (-b + sqrt(Bsq - 4*a*c)) / 2*a;
+    float x2 = (-b - sqrt(Bsq - 4*a*c)) / 2*a;
+    printf("+ value %.2f\n",x1);
+    printf("- value %.2f\n",x2);
 
     return 0;
 }
